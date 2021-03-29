@@ -1,0 +1,47 @@
+<div class="launch-card">
+    <div class="card">
+        <div class="card-body">
+            <figure>
+                <img src="{{data.links.mission_patch_small}}" alt="{{data.rocket.rocket_name}}">
+            </figure>
+
+            <h5>{{data.mission_name}}</h5>
+
+            <ul>
+                <li>
+                    <h6><strong>Rocket Name: </strong> {{data.rocket.rocket_name}}</h6>
+                </li>
+                <li>
+                    <h6><strong>Launch Year: </strong> {{data.launch_year}}</h6>
+                </li>
+            </ul>
+            <h4 style="color: blue">
+                {{ data.mission_name }} # {{ data.flight_number }}
+              </h4>
+              <h4>
+                Mission_ID:
+                <ul>
+                  <li style="color: grey">{{ data.mission_id }}</li>
+                </ul>
+              </h4>
+              <h4>
+                Launch Year:
+                <span style="color: grey">{{ data.launch_year }}</span>
+              </h4>
+              <h4>
+                Successful Launch:
+                <span style="color: grey">{{ data.launch_success }}</span>
+              </h4>
+              <h4>
+                Successful Landing:<span style="color: grey">{{
+                  data.rocket.first_stage.cores[0].land_success
+                }}</span>
+              </h4>
+            
+          </div>
+          
+        </div>
+        
+    </div>
+
+
