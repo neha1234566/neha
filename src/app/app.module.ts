@@ -13,7 +13,7 @@ import { LaunchSpaceXDetailsComponent } from './launch-space-x-details/launch-sp
     LaunchSpaceXDetailsComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     HttpClientModule,
   ],
