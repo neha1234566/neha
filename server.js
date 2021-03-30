@@ -1,12 +1,12 @@
-// server.js
 const express = require('express');
-const path =require('express')
-const app = express();
-// Run the app by serving the static files
-// in the dist directory
-app.use(express.static(__dirname + '/dist/SpaceXApp'));
-// Start the app by listening on the default
-// Heroku port
-app.get('/*',(req,res)); 
-res.sendFile('index.html',{root:'dist/SpaceXApp/'})
-app.listen(process.env.PORT || 8080);
+const path = require('path');
+
+const ngApp = express();
+
+ngApp.use(express.static('./dist/angular-forms-validation'));
+
+ngApp.get('/*', function (request, response) {
+    response.sendFile(path.join(__dirname, '/dist/angular-forms-validation/index.html'));
+});
+
+ngApp.listen(process.env.PORT || 8080);
