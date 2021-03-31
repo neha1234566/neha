@@ -6,6 +6,7 @@
     "start": "nodemon server.js",
     "build": "ng build",
     "test": "ng test",
+    "postinstall": "ng build  --aot --prod",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "dev:ssr": "ng run SpaceXApp:serve-ssr",
