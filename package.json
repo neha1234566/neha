@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -28,6 +28,7 @@
     "@nguniversal/express-engine": "^11.2.1",
     "bootstrap": "^4.6.0",
     "express": "^4.17.1",
+    "nodemon": "^2.0.7",
     "path": "^0.12.7",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
